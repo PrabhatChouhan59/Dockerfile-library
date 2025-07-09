@@ -2,8 +2,9 @@ Dockerfile Examples Library
 A comprehensive collection of Dockerfiles for popular technologies and deployment scenarios. Each example is fully commented, organized by technology, and designed for clarity and ease of use.
 
 📁 Project Structure
-text
-dockerfile-examples/
+
+dockerfile-library/
+```text
 .
 ├── Alpine-python
 │   └── Dockerfile
@@ -47,6 +48,7 @@ dockerfile-examples/
 │   └── Dockerfile
 └── Tensorflow
     └── Dockerfile
+```
 
 22 directories, 21 files
 
@@ -57,9 +59,10 @@ Docker (latest stable version)
 (Optional) Git for cloning the repository
 
 Cloning the Repository
-bash
+```text
 git clone https://github.com/PrabhatChouhan59/Dockerfile-library.git
 cd dockerfile-library
+```
 
 📦 Dependencies
 Each Dockerfile uses official base images (e.g., nginx:alpine, node:20, python:3.11-slim, etc.).
@@ -76,7 +79,7 @@ Note: Check each subfolder for specific dependencies or instructions.
 
 🏃 How to Run an Example
 Navigate to the desired example folder:
-
+```text
 cd node.js/node.js(developent)
 
 Build the Docker image:
@@ -86,6 +89,7 @@ docker build -t my-app .
 Run the container:
 
 docker run -p 3000:3000 my-app
+```
 
 Adjust ports as needed for each technology (e.g., 80 for Nginx, 5000 for Flask, 5432 for PostgreSQL).
 
